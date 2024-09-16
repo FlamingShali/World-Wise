@@ -6,8 +6,10 @@ import { useEffect, useState } from "react";
 import PageNotFound from "./pages/PageNotFound";
 import AppLayout from "./pages/AppLayout";
 import Homepage from "./pages/Homepage";
+import City from "./components/City";
 import Login from "./pages/Login";
 import CityList from "./components/CityList";
+import CountryList from "./components/CountryList";
 function App() {
   const BASE_URL = "http://localhost:8000/cities";
   const [cities, setCities] = useState([]);
@@ -46,7 +48,11 @@ function App() {
               path="cities"
               element={<CityList cities={cities} isLoading={isLoading} />}
             />
-            <Route path="countries" element={<p>List of countries</p>} />
+            <Route path="cities/:id" element={<City />} />
+            <Route
+              path="countries"
+              element={<CountryList cities={cities} isLoading={isLoading} />}
+            />
             <Route path="form" element={<p>Form</p>} />
           </Route>
         </Routes>

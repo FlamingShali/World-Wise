@@ -18,7 +18,6 @@ const CityItem = ({ city }) => {
     deleteCity(id)
   }
 
-  console.log(position);
   return (
     <li>
       <Link

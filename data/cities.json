@@ -1,28 +1,3 @@
 {
-  "cities": [
-    {
-      "id": "89cc",
-      "cityName": "Mailleroncourt-Saint-Pancras",
-      "country": "France",
-      "emoji": "🇫🇷",
-      "date": "2024-09-17T17:42:23.319Z",
-      "notes": "er",
-      "position": {
-        "lat": "47.91634204016118",
-        "lng": "6.141357421875001"
-      }
-    },
-    {
-      "id": "9189",
-      "cityName": "Hohenhameln",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2024-09-17T17:43:10.400Z",
-      "notes": "",
-      "position": {
-        "lat": "52.24125614966341",
-        "lng": "10.063476562500002"
-      }
-    }
-  ]
+  "cities": []
 }

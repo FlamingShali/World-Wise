@@ -1,4 +1,4 @@
-import { createContext, useContext } from "react";
+import { createContext, useContext, useReducer } from "react";
 
 const AuthContext = createContext();
 
@@ -11,6 +11,12 @@ function reducer(state, action) {
   switch (action.type) {
     case "login":
       return { ...state, user: action.payload, isAuthenticated: true };
+    case "logout":
+      return {
+        ...state,
+        user: null,
+        isAuthenticated: false,
+      };
   }
 }
 
@@ -20,6 +26,7 @@ const FAKE_USER = {
   password: "qwerty",
   avatar: "https://i.pravatar.cc/100?u=zz",
 };
+
 function AuthProvider({ children }) {
   const [{ user, isAuthenticated }, dispatch] = useReducer(
     reducer,
@@ -45,6 +52,7 @@ function useAuth() {
   const context = useContext(AuthContext);
   if (context === undefined)
     throw new Error("AuthContext was used outside AuthProvider");
+  return context;
 }
 
 export { AuthProvider, useAuth };

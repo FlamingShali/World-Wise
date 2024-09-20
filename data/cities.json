@@ -1,3 +1,28 @@
 {
-  "cities": []
+  "cities": [
+    {
+      "id": "ba96",
+      "cityName": "Torija",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-09-20T13:21:54.082Z",
+      "notes": "",
+      "position": {
+        "lat": "40.72838392468542",
+        "lng": "-3.0793447265625034"
+      }
+    },
+    {
+      "id": "53bb",
+      "cityName": "Warsaw",
+      "country": "Poland",
+      "emoji": "🇵🇱",
+      "date": "2024-09-20T13:21:54.082Z",
+      "notes": "",
+      "position": {
+        "lat": "52.24125614966341",
+        "lng": "21.082763671875004"
+      }
+    }
+  ]
 }
